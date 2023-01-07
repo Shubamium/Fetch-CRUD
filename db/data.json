@@ -1,0 +1,24 @@
+{
+    "comments":[
+        {
+            "id":0,
+            "comment":"This is the first comment",
+            "postedBy":"username"
+        },
+        {
+            "id":1,
+            "comment":"This is the first comment",
+            "postedBy":"username"
+        },
+        {
+            "id":2,
+            "comment":"This is the first comment",
+            "postedBy":"username"
+        },
+        {
+            "id":3,
+            "comment":"This is the first comment",
+            "postedBy":"username"
+        }
+    ]
+}
