@@ -27,6 +27,16 @@ const App = () => {
         })
         fetchData();
     }
+
+    const delComment = async(id)=>{
+        await fetch(`http://localhost:3000/comments/${id}`,{
+            headers:{
+                "Content-Type":"application/json"
+            },
+            method:"DELETE",
+        });
+        fetchData();
+    }
     const getMaxCommentId = ()=>{
         let newId = comments.map((c)=> c.id);
         newId = Math.max(...newId) + 1;
@@ -35,7 +45,7 @@ const App = () => {
         <div>
             Hi this is my app!
             <Post onPost={addComment}/>
-            <Comments commentList={comments}/>
+            <Comments commentList={comments} deleteFunc={delComment}/>
         </div> 
     );
 }
