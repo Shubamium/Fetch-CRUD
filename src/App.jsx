@@ -42,7 +42,7 @@ const App = () => {
         fetchData();
     };
 
-    const editComment = async(id,edited)=>{
+    const editComment = async(id,edited,onFinish)=>{
         await fetch(`http://localhost:3000/comments/${id}`,{
             headers:{
                 "Content-Type":"application/json"
@@ -51,6 +51,7 @@ const App = () => {
             body:JSON.stringify({comment:edited})
         })
         fetchData();
+        onFinish();
     };
 
  
