@@ -6,4 +6,4 @@ How to test:
 
 # Install Json-Server
 
-    npx json-server --watch ./db/data.json
+    npx json-server --watch ./data/db.json
